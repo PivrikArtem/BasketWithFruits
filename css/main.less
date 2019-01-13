@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Istok+Web");
+body {
+    width: 100%;
+    font-family: "Istok Web", sans-serif;
+    background: rgba(25, 25, 41, 0.993);
+    color: white;
+}
+
+.container-basket-fruits {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+   
+    .wrapper-panel {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        .wrapper-info-about-fruit {
+            display: flex;
+            width: 450px;
+            border: 1px solid white;
+            border-right: none;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 10px 0 0 10px;
+            .wrapper-info-select {
+                display: flex;
+                flex-direction: column;
+                .select-all-fruits {
+                    outline: 0;
+                    border-top-left-radius: 5px;
+                }
+            }
+            .wrapper-properties-fruits {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+                .input-name-fruit {
+                    border: 1px solid black;
+                    border-top-right-radius: 5px;
+                    outline: 0;
+                }
+                .input-pear-text {
+                    border: 1px solid black;
+                    border-bottom-right-radius: 5px;
+                    outline: 0;
+                }
+                .input-orange-text {
+                    border: 1px solid black;
+                    border-bottom-right-radius: 5px;
+                    outline: 0;
+                }
+            }
+        }
+        .buttons-save-and-delete-fruits {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-left: 1px solid white;
+            padding-left: 10px;
+            .btn {
+                color: white;
+            }
+        }
+    }
+    .wrapper-basket {
+        display: flex;
+        justify-content: space-evenly;
+        span {
+            color: white;
+            font-size: 24px;
+        }
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-basket-fruits {
+        flex-direction: column;
+        .name-project {
+            margin-top: 10px;
+            margin-left: 0;
+            text-align: center;
+        }
+        .wrapper-panel {
+            flex-direction: column;
+            margin: 10px 0;
+            .wrapper-info-about-fruit {
+                justify-content: center;
+                padding: 0;
+                width: 100%; // margin-bottom: 30px;
+                border: none;
+                padding: 0 3px;
+                .wrapper-info-select {
+                    margin-right: 20px;
+                    .select-all-fruits {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .buttons-save-and-delete-fruits {
+                margin: 0 100px;
+                border-top: 1px solid white;
+                padding-top: 20px;
+                border-left: none;
+                .btn {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .wrapper-basket {
+        flex-direction: column;
+        align-items: center;
+        .wrappers {
+            display: flex;
+            flex-direction: column;
+            li {
+                font-size: 14px;
+            }
+            span {
+                text-align: center;
+                font-size: 18px;
+            }
+            .wrapper-all-apples {
+                display: flex;
+                align-content: stretch;
+                flex-wrap: wrap;
+            }
+            .wrapper-all-pears {
+                display: flex;
+                align-content: stretch;
+                flex-wrap: wrap;
+            }
+            .wrapper-all-oranges {
+                display: flex;
+                align-content: stretch;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
